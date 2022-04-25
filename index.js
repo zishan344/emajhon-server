@@ -45,7 +45,7 @@ async function run() {
       res.send({ count });
     });
 
-    //use post to get product by ids
+    //use post to get product by Ids
     app.post("/productByKeys", async (req, res) => {
       const keys = req.body;
       const ids = keys.map((id) => ObjectId(id));
